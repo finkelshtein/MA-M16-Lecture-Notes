@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./Ch-05.html" rel="next">
+<link href="./Ch-03.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -246,7 +248,7 @@ window.Quarto = {
 <p>Useful resources for linear regression are <em>Theory and Problems of Probability and Statistics</em> by M.R.Spiegel and <em>How to Use Statistics</em> by S.Lakin. Furthermore, useful resources for logistic regression are <em>Generalised Linear Models</em> by P.McCullagh and J.A.Nelder, and <em>Using Multivariate Statistics</em> by B.G.Tabachnick and L.S.Fidell. The material taught in this chapter will also be met from a machine learning perspective in <em>MA-M17 Modelling and Machine Learning</em> — please see chapters 5 and 6 of <em>Essential Math for Data Science</em> by T.Nield if you would like an insight into this.</p>
 <div id="cell-fig-scatter-data-lin-regr" class="cell" data-message="false" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<div id="fig-scatter-data-lin-regr" class="quarto-float quarto-figure quarto-figure-center anchored" width="332" height="223">
+<div id="fig-scatter-data-lin-regr" class="quarto-float quarto-figure quarto-figure-center anchored" height="223" width="332">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-scatter-data-lin-regr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-scatter-data-lin-regr-output-1.png" id="fig-scatter-data-lin-regr" width="332" height="223" class="figure-img">
@@ -265,7 +267,7 @@ Figure&nbsp;4.1
 <p>Once a statistical model has been set up, its parameters must be estimated from the data. The method of least squares can provide good such estimates. The method minimises the sum of squared residuals, i.e.&nbsp;it minimises the sum of the square of the differences between an observed value and the value produced by the model. We will concentrate on linear least squares which will provide the theory behind simple linear regression.</p>
 <p>::: {#cell-fig-Residuals” .cell message=‘false’ execution_count=2}</p>
 <div class="cell-output cell-output-display">
-<div id="fig-residuals" class="quarto-float quarto-figure quarto-figure-center anchored" width="308" height="203">
+<div id="fig-residuals" class="quarto-float quarto-figure quarto-figure-center anchored" height="203" width="308">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-residuals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-residuals-output-1.png" id="fig-residuals" width="308" height="203" class="figure-img">
@@ -489,7 +491,7 @@ Then, the link function we use is<br>
 The graph of this function is as follows:</p>
 <p>::: {#cell-fig-logit” .cell message=‘false’ execution_count=3}</p>
 <div class="cell-output cell-output-display">
-<div id="fig-logit" class="quarto-float quarto-figure quarto-figure-center anchored" width="320" height="217">
+<div id="fig-logit" class="quarto-float quarto-figure quarto-figure-center anchored" height="217" width="320">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-logit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-logit-output-1.png" id="fig-logit" width="320" height="217" class="figure-img">
@@ -520,7 +522,7 @@ y=\beta_0+\beta_1x_1+\cdots+\beta_nx_n,
 <p>This is an example of a sigmoid function, the graph of which is as follows:</p>
 <p>::: {#cell-fig-sigmoid” .cell message=‘false’ execution_count=4}</p>
 <div class="cell-output cell-output-display">
-<div id="fig-sigmoid" class="quarto-float quarto-figure quarto-figure-center anchored" width="265" height="180">
+<div id="fig-sigmoid" class="quarto-float quarto-figure quarto-figure-center anchored" height="180" width="265">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sigmoid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-sigmoid-output-1.png" id="fig-sigmoid" width="265" height="180" class="figure-img">
@@ -962,6 +964,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Ch-03.html" class="pagination-link" aria-label="Discrete Probability Distributions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Discrete Probability Distributions</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Ch-05.html" class="pagination-link" aria-label="Continuous Probability Distributions">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Continuous Probability Distributions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -1,26 +1,34 @@
-div.callout-note.callout {
-    border-left-color: #704214;
+:root {
+    --callout-tip-color: #00A047;
+    --callout-important-color: #CC1914; 
+  }
+
+.callout.callout-style-default {
     border-left-width: 5pt;
+    border-right-width: 2pt;
+    border-top-width: 2pt;
+    border-bottom-width: 2pt;
+}
+    
+
+div.callout-note.callout {
+    border-color: #704214;
 }
 
 div.callout-tip.callout {
-    border-left-color: #35554E;
-    border-left-width: 5pt;
+    border-color: var(--callout-tip-color);
 }
 
 div.callout-warning.callout {
-    border-left-color: #B31E21;
-    border-left-width: 5pt;
+    border-color: #B31E21;
 }
 
 div.callout-important.callout {
-    border-left-color: #7A004B;
-    border-left-width: 5pt;
+    border-color: var(--callout-important-color);
 }
 
 div.callout-caution.callout {
-    border-left-color: #532D80;
-    border-left-width: 5pt;
+    border-color: #532D80;
 }
 
 div.callout-note.callout-style-default>.callout-header {
@@ -28,7 +36,7 @@ div.callout-note.callout-style-default>.callout-header {
 }
 
 div.callout-tip.callout-style-default>.callout-header {
-    background-color: rgba(53,85,78,0.2);
+    background-color: rgb(from var(--callout-tip-color) r g b / 0.2);
 }
 
 div.callout-warning.callout-style-default>.callout-header {
@@ -36,7 +44,7 @@ div.callout-warning.callout-style-default>.callout-header {
 }
 
 div.callout-important.callout-style-default>.callout-header {
-    background-color: rgba(122,0,75,0.2);
+    background-color: rgb(from var(--callout-important-color) r g b / 0.2);
 }
 
 div.callout-caution.callout-style-default>.callout-header {
