@@ -1,7 +1,51 @@
 :root {
     --callout-tip-color: #00A047;
     --callout-important-color: #CC1914; 
+    --callout-note-color: #704214;
+    --callout-warning-color: #1d1470;
+    --callout-caution-color: #7e2b63;
+    --background-color: rgba(236, 233, 240, 0.95);
   }
+
+div.callout-note.callout {
+    border-color: var(--callout-note-color);
+}
+
+div.callout-tip.callout {
+    border-color: var(--callout-tip-color);
+}
+
+div.callout-warning.callout {
+    border-color: var(--callout-warning-color);
+}
+
+div.callout-important.callout {
+    border-color: var(--callout-important-color);
+}
+
+div.callout-caution.callout {
+    border-color: var(--callout-caution-color);
+}
+
+div.callout-note.callout-style-default>.callout-header {
+    background-color: rgb(from var(--callout-note-color) r g b / 0.2);
+}
+
+div.callout-tip.callout-style-default>.callout-header {
+    background-color: rgb(from var(--callout-tip-color) r g b / 0.2);
+}
+
+div.callout-warning.callout-style-default>.callout-header {
+    background-color: rgb(from var(--callout-warning-color) r g b / 0.2);
+}
+
+div.callout-important.callout-style-default>.callout-header {
+    background-color: rgb(from var(--callout-important-color) r g b / 0.2);
+}
+
+div.callout-caution.callout-style-default>.callout-header {
+    background-color: rgb(from var(--callout-caution-color) r g b / 0.2);
+}
 
 .callout.callout-style-default {
     border-left-width: 5pt;
@@ -11,59 +55,12 @@
 }
     
 
-div.callout-note.callout {
-    border-color: #704214;
-}
-
-div.callout-tip.callout {
-    border-color: var(--callout-tip-color);
-}
-
-div.callout-warning.callout {
-    border-color: #B31E21;
-}
-
-div.callout-important.callout {
-    border-color: var(--callout-important-color);
-}
-
-div.callout-caution.callout {
-    border-color: #532D80;
-}
-
-div.callout-note.callout-style-default>.callout-header {
-    background-color: rgba(112,66,20,0.2);
-}
-
-div.callout-tip.callout-style-default>.callout-header {
-    background-color: rgb(from var(--callout-tip-color) r g b / 0.2);
-}
-
-div.callout-warning.callout-style-default>.callout-header {
-    background-color: rgba(179,30,33,0.2);
-}
-
-div.callout-important.callout-style-default>.callout-header {
-    background-color: rgb(from var(--callout-important-color) r g b / 0.2);
-}
-
-div.callout-caution.callout-style-default>.callout-header {
-    background-color: rgba(83,45,128,0.2);
-}
-
-.callout.callout-style-default {
-    border-left: 5px solid;
-    border-right: 2px solid #dee2e6;
-    border-top: 2px solid #dee2e6;
-    border-bottom: 2px solid #dee2e6;
-}
-
 body {
-    background-color: rgba(236, 233, 240, 0.95);
+    background-color: var(--background-color);
 }
 
 div.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents, nav.sidebar.sidebar-navigation:not(.rollup) {
-    background-color: rgba(236, 233, 240, 0.95);
+    background-color: var(--background-color);
 }
 
 figure.figure {

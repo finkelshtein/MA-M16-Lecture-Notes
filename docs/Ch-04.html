@@ -248,7 +248,7 @@ window.Quarto = {
 <p>Useful resources for linear regression are <em>Theory and Problems of Probability and Statistics</em> by M.R.Spiegel and <em>How to Use Statistics</em> by S.Lakin. Furthermore, useful resources for logistic regression are <em>Generalised Linear Models</em> by P.McCullagh and J.A.Nelder, and <em>Using Multivariate Statistics</em> by B.G.Tabachnick and L.S.Fidell. The material taught in this chapter will also be met from a machine learning perspective in <em>MA-M17 Modelling and Machine Learning</em> — please see chapters 5 and 6 of <em>Essential Math for Data Science</em> by T.Nield if you would like an insight into this.</p>
 <div id="cell-fig-scatter-data-lin-regr" class="cell" data-message="false" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<div id="fig-scatter-data-lin-regr" class="quarto-float quarto-figure quarto-figure-center anchored" height="223" width="332">
+<div id="fig-scatter-data-lin-regr" class="quarto-float quarto-figure quarto-figure-center anchored" width="332" height="223">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-scatter-data-lin-regr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-scatter-data-lin-regr-output-1.png" id="fig-scatter-data-lin-regr" width="332" height="223" class="figure-img">
@@ -265,9 +265,9 @@ Figure&nbsp;4.1
 <section id="the-method-of-least-squares" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="the-method-of-least-squares"><span class="header-section-number">4.1</span> The Method of Least Squares</h2>
 <p>Once a statistical model has been set up, its parameters must be estimated from the data. The method of least squares can provide good such estimates. The method minimises the sum of squared residuals, i.e.&nbsp;it minimises the sum of the square of the differences between an observed value and the value produced by the model. We will concentrate on linear least squares which will provide the theory behind simple linear regression.</p>
-<p>::: {#cell-fig-Residuals” .cell message=‘false’ execution_count=2}</p>
+<div id="cell-fig-Residuals" class="cell" data-message="false" data-execution_count="2">
 <div class="cell-output cell-output-display">
-<div id="fig-residuals" class="quarto-float quarto-figure quarto-figure-center anchored" height="203" width="308">
+<div id="fig-residuals" class="quarto-float quarto-figure quarto-figure-center anchored" width="308" height="203">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-residuals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-residuals-output-1.png" id="fig-residuals" width="308" height="203" class="figure-img">
@@ -278,7 +278,7 @@ Figure&nbsp;4.2
 </figure>
 </div>
 </div>
-<p>:::</p>
+</div>
 <p>Assuming that we have data pairs <span class="math inline">\((x_1,y_1),\ldots,(x_n,y_n)\)</span>, the model line will take the form <span class="math display">\[
 \E(y)=\beta_0+\beta_1x,
 \]</span> where <span class="math inline">\(y\)</span> is the <strong>dependent variable (response variable)</strong> (it depends on <span class="math inline">\(x\)</span>!) and <span class="math inline">\(x\)</span> is the <strong>independent variable (explanatory/predictor variable)</strong> (it does not depend on another variable). In fact the variables will be related by <span class="math display">\[
@@ -489,9 +489,9 @@ Then, the link function we use is<br>
 \text{logit}(p)=\ln(odds)=\ln\left(\frac{p}{1-p}\right).      
 \]</span><br>
 The graph of this function is as follows:</p>
-<p>::: {#cell-fig-logit” .cell message=‘false’ execution_count=3}</p>
+<div id="cell-fig-logit" class="cell" data-message="false" data-execution_count="3">
 <div class="cell-output cell-output-display">
-<div id="fig-logit" class="quarto-float quarto-figure quarto-figure-center anchored" height="217" width="320">
+<div id="fig-logit" class="quarto-float quarto-figure quarto-figure-center anchored" width="320" height="217">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-logit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-logit-output-1.png" id="fig-logit" width="320" height="217" class="figure-img">
@@ -502,7 +502,7 @@ Figure&nbsp;4.3
 </figure>
 </div>
 </div>
-<p>:::</p>
+</div>
 <p>Therefore, the model we consider is the following:</p>
 <p><span id="eq-LOGIT"><span class="math display">\[
 \text{logit}(p)=\ln\left(\frac{p}{1-p}\right)=\beta_0+\beta_1x_1+\beta_2 x_2+\cdots+\beta_nx_n      
@@ -520,9 +520,9 @@ y=\beta_0+\beta_1x_1+\cdots+\beta_nx_n,
 \end{aligned}
 \]</span></p>
 <p>This is an example of a sigmoid function, the graph of which is as follows:</p>
-<p>::: {#cell-fig-sigmoid” .cell message=‘false’ execution_count=4}</p>
+<div id="cell-fig-sigmoid" class="cell" data-message="false" data-execution_count="4">
 <div class="cell-output cell-output-display">
-<div id="fig-sigmoid" class="quarto-float quarto-figure quarto-figure-center anchored" height="180" width="265">
+<div id="fig-sigmoid" class="quarto-float quarto-figure quarto-figure-center anchored" width="265" height="180">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sigmoid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Ch-04_files/figure-html/fig-sigmoid-output-1.png" id="fig-sigmoid" width="265" height="180" class="figure-img">
@@ -533,7 +533,7 @@ Figure&nbsp;4.4
 </figure>
 </div>
 </div>
-<p>:::</p>
+</div>
 <p>From the graph above, we can see that for any real input <span class="math inline">\(y\)</span>, we get <span class="math inline">\(0&lt;p&lt;1\)</span> which intuitively makes sense.</p>
 <p>In practice, we obtain an estimate <span class="math inline">\(\hat{p}\)</span> of <span class="math inline">\(p\)</span> using maximum likelihood estimates of the coefficients <span class="math inline">\(\beta_0,\beta_1,\ldots,\beta_n\)</span>, i.e.<br>
 <span class="math display">\[   
