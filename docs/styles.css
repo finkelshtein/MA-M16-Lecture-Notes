@@ -53,6 +53,12 @@ div.callout-caution.callout-style-default>.callout-header {
     border-top-width: 2pt;
     border-bottom-width: 2pt;
 }
+
+.theorem.example {
+    border: 2pt solid var(--callout-warning-color);
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
     
 
 body {

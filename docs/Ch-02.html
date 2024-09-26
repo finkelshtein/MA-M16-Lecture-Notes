@@ -297,7 +297,7 @@ Memorize
 \]</span></p>
 </div>
 </div>
-<div id="cell-fig-polar" class="cell" data-message="false" data-execution_count="1">
+<div id="cell-fig-polar" class="cell" data-message="false" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -354,7 +354,7 @@ B=\{J{\color{red}\diamondsuit}, Q{\color{red}\diamondsuit}, K{\color{red}\diamon
 </section>
 <section id="rules-of-probability" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="rules-of-probability"><span class="header-section-number">2.2</span> Rules of Probability</h2>
-<div id="cell-fig-events-sum" class="cell" data-message="false" data-execution_count="2">
+<div id="cell-fig-events-sum" class="cell" data-message="false" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div id="fig-events-sum" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -369,12 +369,12 @@ Figure&nbsp;2.2: Visual representation of <span class="math inline">\(A+ B\)</sp
 </div>
 </div>
 <div id="def-events-sum" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2.1</strong></span> The <strong>sum</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(A+B\)</span> (also denoted <span class="math inline">\(A\cup B\)</span> or <span class="math inline">\(A\vee B\)</span>) which occurs iff <em>either</em> <span class="math inline">\(A\)</span> occurs <em>or</em> <span class="math inline">\(B\)</span> occurs <em>or they both</em> occur.</p>
+<p><span class="theorem-title"><strong>Definition 2.5</strong></span> The <strong>sum</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(A+B\)</span> (also denoted <span class="math inline">\(A\cup B\)</span> or <span class="math inline">\(A\vee B\)</span>) which occurs iff <em>either</em> <span class="math inline">\(A\)</span> occurs <em>or</em> <span class="math inline">\(B\)</span> occurs <em>or they both</em> occur.</p>
 </div>
 <div id="def-events-prod" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2.2</strong></span> The <strong>product</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(AB\)</span> (also denoted <span class="math inline">\(A\cap B\)</span> or <span class="math inline">\(A\wedge B\)</span>) which occurs iff <em>both</em> <span class="math inline">\(A\)</span> <em>and</em> <span class="math inline">\(B\)</span> occur.</p>
+<p><span class="theorem-title"><strong>Definition 2.6</strong></span> The <strong>product</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(AB\)</span> (also denoted <span class="math inline">\(A\cap B\)</span> or <span class="math inline">\(A\wedge B\)</span>) which occurs iff <em>both</em> <span class="math inline">\(A\)</span> <em>and</em> <span class="math inline">\(B\)</span> occur.</p>
 </div>
-<div id="cell-fig-events-prod" class="cell" data-message="false" data-execution_count="3">
+<div id="cell-fig-events-prod" class="cell" data-message="false" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div id="fig-events-prod" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -426,7 +426,7 @@ Memorize
 </div>
 </div>
 <div id="exm-Example-3" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2.5</strong></span> There is a standard deck of <span class="math inline">\(52\)</span> playing cards. Find the probability of drawing either a red card or a face card (king, queen, or jack) from the deck in a single draw.</p>
+<p><span class="theorem-title"><strong>Example 2.7</strong></span> There is a standard deck of <span class="math inline">\(52\)</span> playing cards. Find the probability of drawing either a red card or a face card (king, queen, or jack) from the deck in a single draw.</p>
 <p><em>Solution:</em> Let <span class="math inline">\(A\)</span> be the event of drawing a red card, and <span class="math inline">\(B\)</span> be the event of drawing a face card. Overall, there are <span class="math inline">\(26\)</span> red cards, <span class="math inline">\(12\)</span> face cards, and <span class="math inline">\(6\)</span> red face cards. Therefore, <span class="math display">\[
 \P(A+B)=\frac{26}{52}+\frac{12}{52}-\frac{6}{52}=\frac{32}{52}=\frac{8}{13}.
 \]</span></p>
@@ -447,11 +447,11 @@ Remember
 </div>
 </div>
 <div id="def-ev-compl" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2.3</strong></span> The <strong>complement</strong> to an event <span class="math inline">\(A\)</span> is the event <span class="math inline">\(A^c\)</span> which occurs iff <span class="math inline">\(A\)</span> <em>does not</em> occur. Since <span class="math inline">\(\P(\Omega)=1\)</span>, one has <span class="math display">\[
+<p><span class="theorem-title"><strong>Definition 2.8</strong></span> The <strong>complement</strong> to an event <span class="math inline">\(A\)</span> is the event <span class="math inline">\(A^c\)</span> which occurs iff <span class="math inline">\(A\)</span> <em>does not</em> occur. Since <span class="math inline">\(\P(\Omega)=1\)</span>, one has <span class="math display">\[
 \P(A^c)=1-\P(A).
 \]</span></p>
 </div>
-<div id="cell-fig-events-compl" class="cell" data-message="false" data-execution_count="4">
+<div id="cell-fig-events-compl" class="cell" data-message="false" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div id="fig-events-compl" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -466,13 +466,13 @@ Figure&nbsp;2.4: Visual representation of <span class="math inline">\(A^c\)</spa
 </div>
 </div>
 <div id="exm-event-compl" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2.6</strong></span> A fair six-sided dice is rolling three times. Find the probability that the total score (the sum of three trials) will be at least <span class="math inline">\(4\)</span> (event <span class="math inline">\(A\)</span>).</p>
+<p><span class="theorem-title"><strong>Example 2.9</strong></span> A fair six-sided dice is rolling three times. Find the probability that the total score (the sum of three trials) will be at least <span class="math inline">\(4\)</span> (event <span class="math inline">\(A\)</span>).</p>
 <p><em>Solution:</em> The sample space <span class="math inline">\(\Omega\)</span> consists of all triples <span class="math inline">\((a,b,c)\)</span> with <span class="math inline">\(a,b,c\in\{1,2,\ldots,6\}\)</span>. Thus, <span class="math inline">\(\sharp(\Omega)=6^3=216\)</span>. The total score is <span class="math inline">\(4\)</span> or more in all cases but the case <span class="math inline">\((1,1,1)\)</span>. Therefore, the answer is: <span class="math display">\[
 \P(A) = 1-\P(A^c)=1-\frac{1}{216}=\frac{215}{216}.
 \]</span></p>
 </div>
 <div id="def-conditional-probability" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2.4</strong></span> <strong>Conditional probability</strong> <span class="math inline">\(\P(A\mid B)\)</span> is the probability of an event <span class="math inline">\(A\)</span> occurring given that event <span class="math inline">\(B\)</span> has already occurred, so we assume that <span class="math inline">\(\color{red}\P(B)\neq0\)</span>. The formula is <span class="math display">\[
+<p><span class="theorem-title"><strong>Definition 2.10</strong></span> <strong>Conditional probability</strong> <span class="math inline">\(\P(A\mid B)\)</span> is the probability of an event <span class="math inline">\(A\)</span> occurring given that event <span class="math inline">\(B\)</span> has already occurred, so we assume that <span class="math inline">\(\color{red}\P(B)\neq0\)</span>. The formula is <span class="math display">\[
 \P(A\mid B) = \frac{\P(AB)}{\P(B)}.
 \]</span></p>
 </div>
@@ -507,7 +507,7 @@ Remember
 </div>
 </div>
 <div id="exm-Example-5" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2.7</strong></span> In a bag of <span class="math inline">\(20\)</span> marbles, <span class="math inline">\(8\)</span> are red, and <span class="math inline">\(12\)</span> are green. Three marbles are drawn from the bag without replacement. What is the probability that they all are of the same color?</p>
+<p><span class="theorem-title"><strong>Example 2.11</strong></span> In a bag of <span class="math inline">\(20\)</span> marbles, <span class="math inline">\(8\)</span> are red, and <span class="math inline">\(12\)</span> are green. Three marbles are drawn from the bag without replacement. What is the probability that they all are of the same color?</p>
 <p><em>Solution:</em> we need to find the probability that either <span class="math inline">\(A=(r,r,r)\)</span> or <span class="math inline">\(B=(g,g,g)\)</span> holds. Note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are <em>mutually exclusive events</em>. By the multiplication rule, <span class="math display">\[
 \P(A) = \frac{8}{20}\cdot\frac{7}{19}\cdot\frac{6}{18},
 \]</span> and <span class="math display">\[
@@ -518,12 +518,12 @@ Remember
 \]</span></p>
 </div>
 <div id="def-independ" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2.5</strong></span> An event <span class="math inline">\(A\)</span> is said to be <strong>independent</strong> on an event <span class="math inline">\(B\)</span> if the occurrence of <span class="math inline">\(B\)</span> does not affect the probability of occurrence of <span class="math inline">\(A\)</span>. In other words, <span class="math inline">\(A\)</span> is independent on <span class="math inline">\(B\)</span> iff <span class="math display">\[
+<p><span class="theorem-title"><strong>Definition 2.12</strong></span> An event <span class="math inline">\(A\)</span> is said to be <strong>independent</strong> on an event <span class="math inline">\(B\)</span> if the occurrence of <span class="math inline">\(B\)</span> does not affect the probability of occurrence of <span class="math inline">\(A\)</span>. In other words, <span class="math inline">\(A\)</span> is independent on <span class="math inline">\(B\)</span> iff <span class="math display">\[
 \P(A\mid B) = \P(A).
 \]</span></p>
 </div>
 <div id="exm-indep-simple" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2.8</strong></span> A fair coin is tossing twice. Let <span class="math inline">\(A\)</span>: a head appeared in the first tossing, and <span class="math inline">\(B\)</span>: a tail appeared in the second tossing. Then <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent. <span class="math inline">\(A=\{HH,HT\}\)</span>, <span class="math inline">\(B=\{HT,TT\}\)</span>, and hence, <span class="math inline">\(AB=\{HT\}\)</span>. Then <span class="math inline">\(\P(AB)=\frac14=\frac12\cdot\frac12=\P(A)\P(B)\)</span>.</p>
+<p><span class="theorem-title"><strong>Example 2.13</strong></span> A fair coin is tossing twice. Let <span class="math inline">\(A\)</span>: a head appeared in the first tossing, and <span class="math inline">\(B\)</span>: a tail appeared in the second tossing. Then <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent. <span class="math inline">\(A=\{HH,HT\}\)</span>, <span class="math inline">\(B=\{HT,TT\}\)</span>, and hence, <span class="math inline">\(AB=\{HT\}\)</span>. Then <span class="math inline">\(\P(AB)=\frac14=\frac12\cdot\frac12=\P(A)\P(B)\)</span>.</p>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -543,7 +543,7 @@ Remember
 <div class="proof remark">
 <p><span class="proof-title"><em>Remark</em>. </span>If three (or more) events are pairwise independent: <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, the same for <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, and for <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, it still may be that they are not independent in total, and then, in general, <span class="math inline">\(\P(ABC)\neq\P(A)\P(B)\P(C)\)</span> (see the multiplication rule).</p>
 </div>
-<div id="cell-fig-total-prob" class="cell" data-message="false" data-execution_count="6">
+<div id="cell-fig-total-prob" class="cell" data-message="false" data-execution_count="7">
 <div class="cell-output cell-output-display">
 <div id="fig-total-prob" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -588,7 +588,7 @@ Remember
 \]</span></p>
 </div>
 </div>
-<p>From <a href="#def-conditional-probability" class="quarto-xref">Definition&nbsp;<span>2.4</span></a>, we have that <span class="math display">\[
+<p>From <a href="#def-conditional-probability" class="quarto-xref">Definition&nbsp;<span>2.10</span></a>, we have that <span class="math display">\[
 \P(B) \P(A\mid B) = \P(AB)=\P(BA)=\P(A)\P(B\mid A).
 \]</span> This implies the following important statement.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -622,7 +622,7 @@ Remember
 </div>
 </div>
 <div id="exm-bayes1" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2.9</strong></span> A patient has taken a test for a rare disease. The prevalence of the disease in the population is known to be very low, only <span class="math inline">\(0.1\)</span>%. The test correctly identifies the disease in <span class="math inline">\(95\)</span>% of cases when it’s present. The test incorrectly indicates the presence of the disease in <span class="math inline">\(3\)</span>%, of cases where it’s not actually present. The patient has just received a positive test result for the disease. What is the probability that he actually has the disease?</p>
+<p><span class="theorem-title"><strong>Example 2.14</strong></span> A patient has taken a test for a rare disease. The prevalence of the disease in the population is known to be very low, only <span class="math inline">\(0.1\)</span>%. The test correctly identifies the disease in <span class="math inline">\(95\)</span>% of cases when it’s present. The test incorrectly indicates the presence of the disease in <span class="math inline">\(3\)</span>%, of cases where it’s not actually present. The patient has just received a positive test result for the disease. What is the probability that he actually has the disease?</p>
 <p><em>Solution:</em> Let <span class="math inline">\(D\)</span> denote the event of having the desease for a member of the population, then <span class="math inline">\(\P(D) = 0.001\)</span> (<span class="math inline">\(0.1\)</span>%). Let <span class="math inline">\(T\)</span> denote the event of the positive test result. Then we know that <span class="math display">\[
 \P(T|D) = 0.95, \qquad \P(T|D^c) = 0.03.
 \]</span> By the very definition, <span class="math inline">\(D\)</span> and <span class="math inline">\(D^c\)</span> form a partition of <span class="math inline">\(\Omega\)</span>. Then <span class="math display">\[
