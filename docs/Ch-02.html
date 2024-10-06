@@ -248,25 +248,25 @@ window.Quarto = {
 <section id="introduction-to-probability-theory" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="introduction-to-probability-theory"><span class="header-section-number">2.1</span> Introduction to Probability Theory</h2>
 <p><strong>Probability Theory</strong> is a branch of mathematics that deals with uncertainty and randomness. It provides a framework for quantifying and analyzing uncertainty in stochastic experiments.</p>
+<p>Probability theory plays a crucial role in data science, where we often deal with uncertain data and make predictions based on probabilities.</p>
+<p>An <strong>experiment</strong> or <strong>trial</strong> is any procedure that can be infinitely repeated and has a well-defined set of possible outcomes.</p>
+<p>An <strong>outcome</strong> (denoted by <span class="math inline">\(\omega\)</span>) is a particular result of an experiment.</p>
+<p>A <strong>sample space</strong> (denoted by <span class="math inline">\(\Omega\)</span>) is the set of all possible outcomes of an experiment (i.e.&nbsp;<span class="math inline">\(\omega\in\Omega\)</span>).</p>
+<p>An <strong>event</strong> is a subset of the sample space (e.g.&nbsp;<span class="math inline">\(A\subset \Omega\)</span>), representing a specific outcome or a collection of outcomes.</p>
+<p><strong>Probability</strong> (denoted by <span class="math inline">\(\P\)</span>) is a measure of the likelihood of an event occurring. It assigns a number between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span> to an event, where <span class="math inline">\(0\)</span> indicates extreme unlikelihood, and <span class="math inline">\(1\)</span> indicates certainty that the event will occur. In particular, <span class="math display">\[0\leq \P(A)\leq \P(\Omega) = 1.\]</span></p>
 <div id="exm-Example-coin" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2.1</strong></span> When we throw a coin ones, the possible outcomes are <span class="math inline">\(H, T\)</span> (stand for ‘head’ and ‘tail’).</p>
 <p>Therefore, <span class="math inline">\(\Omega=\{H, T\}\)</span>.</p>
 <p>There are <span class="math inline">\(4\)</span> events one can consider: <span class="math inline">\(\{H\}, \{T\}, \{H,T\}, \emptyset\)</span>.</p>
 </div>
-<p>Probability theory plays a crucial role in data science, where we often deal with uncertain data and make predictions based on probabilities.</p>
-<p>An <strong>experiment</strong> or <strong>trial</strong> is any procedure that can be infinitely repeated and has a well-defined set of possible outcomes.</p>
-<p>An <strong>outcome</strong> (denoted by <span class="math inline">\(\omega\)</span>) is a particular result of an experiment.</p>
-<p>A <strong>sample space</strong> (denoted by <span class="math inline">\(\Omega\)</span>) is the set of all possible outcomes of an experiment (i.e.&nbsp;<span class="math inline">\(\omega\in\Omega\)</span>).</p>
 <div id="exm-Example-dice" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2.2</strong></span> Consider rolling a fair six-sided dice.</p>
 <p>The possible outcomes then are <span class="math inline">\(1,2,3,4,5,6\)</span>.</p>
 <p>Therefore, <span class="math inline">\(\Omega=\{1,2,3,4,5,6\}\)</span>.</p>
-<p>Event <span class="math inline">\(A\)</span> of getting an even number: <span class="math inline">\(A = \{2, 4, 6\}\)</span>.</p>
-<p>Event <span class="math inline">\(B\)</span> of getting a prime number: <span class="math inline">\(B = \{2, 3, 5\}\)</span>.</p>
+<p>Consider the event <span class="math inline">\(A\)</span> of getting an even number: <span class="math inline">\(A = \{2, 4, 6\}\)</span>.</p>
+<p>Consider the event <span class="math inline">\(B\)</span> of getting a prime number: <span class="math inline">\(B = \{2, 3, 5\}\)</span>.</p>
 <p>Then <span class="math inline">\(\P(A)=\P(B)=\frac12\)</span> (think why).</p>
 </div>
-<p>An <strong>event</strong> is a subset of the sample space (e.g.&nbsp;<span class="math inline">\(A\subset \Omega\)</span>), representing a specific outcome or a collection of outcomes.</p>
-<p><strong>Probability</strong> (denoted by <span class="math inline">\(\P\)</span>) is a measure of the likelihood of an event occurring. It assigns a number between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span> to an event, where <span class="math inline">\(0\)</span> indicates extreme unlikelihood, and <span class="math inline">\(1\)</span> indicates certainty that the event will occur. In particular, <span class="math display">\[0\leq \P(A)\leq \P(\Omega) = 1.\]</span></p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
