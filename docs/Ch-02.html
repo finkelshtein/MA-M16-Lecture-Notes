@@ -282,6 +282,30 @@ Remember
 \]</span></p>
 </div>
 </div>
+<div class="proof remark">
+<p><span class="proof-title"><em>Remark</em>. </span>In the experiment from <a href="#exm-Example-dice" class="quarto-xref">Example&nbsp;<span>2.2</span></a>, the following <span class="math inline">\(2^6=64\)</span> events can be considered <span class="math display">\[
+\begin{gathered}
+\emptyset, \{1\}, \{2\}, \ldots, \{6\},\\
+\{1,2\}, \{1,3\}, \ldots, \{5,6\},\\
+\{1,2,3\}, \ldots,  \{4,5,6\},\\
+\ldots\\
+\{1,2,\ldots,6\}.
+\end{gathered}
+\]</span></p>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Remember
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If the sample space <span class="math inline">\(\Omega\)</span> contains <span class="math inline">\(n\)</span> elements (outcomes), then the set of all events (that is the set of all subsets of <span class="math inline">\(\Omega\)</span>) is denoted by <span class="math inline">\(2^\Omega\)</span>, and it contains <span class="math inline">\(2^n\)</span> events.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -320,30 +344,6 @@ A=\bigl\{  (5,6), (6,5), (6,6) \bigr\}.
 \P(A)=\frac{3}{36}=\frac1{12}.
 \]</span></p>
 </div>
-<div class="proof remark">
-<p><span class="proof-title"><em>Remark</em>. </span>In the experiment from <a href="#exm-Example-dice" class="quarto-xref">Example&nbsp;<span>2.2</span></a>, the following <span class="math inline">\(2^6=64\)</span> events can be considered <span class="math display">\[
-\begin{gathered}
-\emptyset, \{1\}, \{2\}, \ldots, \{6\},\\
-\{1,2\}, \{1,3\}, \ldots, \{5,6\},\\
-\{1,2,3\}, \ldots,  \{4,5,6\},\\
-\ldots\\
-\{1,2,\ldots,6\}.
-\end{gathered}
-\]</span></p>
-</div>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Remember
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If the sample space <span class="math inline">\(\Omega\)</span> contains <span class="math inline">\(n\)</span> elements (outcomes), then the set of all events (that is the set of all subsets of <span class="math inline">\(\Omega\)</span>) is denoted by <span class="math inline">\(2^\Omega\)</span>, and it contains <span class="math inline">\(2^n\)</span> events.</p>
-</div>
-</div>
 <div id="exm-Example-2.1" class="theorem example">
 <p><span class="theorem-title"><strong>Example 2.4</strong></span> Consider drawing a card from a standard deck of <span class="math inline">\(52\)</span> playing cards. The sample space <span class="math inline">\(\Omega\)</span> is the set of all <span class="math inline">\(52\)</span> pairs of the form <span class="math inline">\(vS\)</span>, where <span class="math inline">\(v\in\{A, 2, 3, 4, \ldots, 10, J, Q, K\}\)</span> is the value of a card (here <span class="math inline">\(J\)</span> represents a Jack, <span class="math inline">\(Q\)</span> represents a Queen, <span class="math inline">\(K\)</span> represents a King, and <span class="math inline">\(A\)</span> represents an Ace), and <span class="math inline">\(S\in\{\clubsuit,{\color{red}\diamondsuit}, \spadesuit, {\color{red}\heartsuit}\}\)</span> is the card suit (e.g.&nbsp;<span class="math inline">\(2{\color{red}\diamondsuit},\ldots, A{\color{red}\diamondsuit}\)</span> are all diamonds). Let <span class="math inline">\(B\)</span> be the event of drawing a red face card. Then <span class="math display">\[
 B=\{J{\color{red}\diamondsuit}, Q{\color{red}\diamondsuit}, K{\color{red}\diamondsuit}, J{\color{red}\heartsuit}, Q{\color{red}\heartsuit}, K{\color{red}\heartsuit}\},
@@ -354,6 +354,9 @@ B=\{J{\color{red}\diamondsuit}, Q{\color{red}\diamondsuit}, K{\color{red}\diamon
 </section>
 <section id="rules-of-probability" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="rules-of-probability"><span class="header-section-number">2.2</span> Rules of Probability</h2>
+<div id="def-events-sum" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.5</strong></span> The <strong>sum</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(A+B\)</span> (also denoted <span class="math inline">\(A\cup B\)</span> or <span class="math inline">\(A\vee B\)</span>) which occurs iff <em>either</em> <span class="math inline">\(A\)</span> occurs <em>or</em> <span class="math inline">\(B\)</span> occurs <em>or they both</em> occur.</p>
+</div>
 <div id="cell-fig-events-sum" class="cell" data-message="false" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div id="fig-events-sum" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -367,9 +370,6 @@ Figure&nbsp;2.2: Visual representation of <span class="math inline">\(A+ B\)</sp
 </figure>
 </div>
 </div>
-</div>
-<div id="def-events-sum" class="theorem definition">
-<p><span class="theorem-title"><strong>Definition 2.5</strong></span> The <strong>sum</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(A+B\)</span> (also denoted <span class="math inline">\(A\cup B\)</span> or <span class="math inline">\(A\vee B\)</span>) which occurs iff <em>either</em> <span class="math inline">\(A\)</span> occurs <em>or</em> <span class="math inline">\(B\)</span> occurs <em>or they both</em> occur.</p>
 </div>
 <div id="def-events-prod" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 2.6</strong></span> The <strong>product</strong> of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is the event <span class="math inline">\(AB\)</span> (also denoted <span class="math inline">\(A\cap B\)</span> or <span class="math inline">\(A\wedge B\)</span>) which occurs iff <em>both</em> <span class="math inline">\(A\)</span> <em>and</em> <span class="math inline">\(B\)</span> occur.</p>
