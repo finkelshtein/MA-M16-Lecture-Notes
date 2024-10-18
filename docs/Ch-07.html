@@ -342,21 +342,21 @@ z=\frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}
 <p>Since <span class="math inline">\(P(Z\leq 2.58)=0.995\)</span> the critical region is <span class="math inline">\(|z|&gt;2.58\)</span> and the test statistic is given by <span class="math display">\[
 z=\frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}=\frac{0.989-1}{\frac{0.02}{5}}=-2.75.
 \]</span></p>
-<div id="905d62f5" class="cell" data-message="false" data-execution_count="1">
+<div id="d804a7d9" class="cell" data-message="false" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Ch-07_files/figure-html/cell-2-output-1.png" data-fig-pos="H" width="470" height="261" class="figure-img"></p>
+<p><img src="Ch-07_files/figure-html/cell-2-output-1.png" data-fig-pos="H" width="468" height="261" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Clearly <span class="math inline">\(-2.75\)</span> is in the critical region, therefore we reject <span class="math inline">\(H_0\)</span> at the <span class="math inline">\(1\%\)</span> significance level and conclude that the machine settings should be corrected. Using the p-value approach we find:</p>
-<div id="5c6f4209" class="cell" data-message="false" data-execution_count="2">
+<div id="6ad86bec" class="cell" data-message="false" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Ch-07_files/figure-html/cell-3-output-1.png" data-fig-pos="H" width="470" height="261" class="figure-img"></p>
+<p><img src="Ch-07_files/figure-html/cell-3-output-1.png" data-fig-pos="H" width="468" height="261" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -395,21 +395,21 @@ z=\frac{\bar{x}-\bar{y}-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma
 <p>We approximate the distribution of strokes by <span class="math inline">\(N(\mu, \frac{2.6^2}{36})\)</span> and the test statistic is given by <span class="math display">\[
 z=\frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}=\frac{83.1-84.1}{\frac{2.6}{6}}=-2.31.
 \]</span> This lies in the critical region therefore we reject the null hypothesis and conclude that her game seems to have improved.</p>
-<div id="adc68e89" class="cell" data-message="false" data-execution_count="3">
+<div id="171564cf" class="cell" data-message="false" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Ch-07_files/figure-html/cell-4-output-1.png" data-fig-pos="H" width="470" height="241" class="figure-img"></p>
+<p><img src="Ch-07_files/figure-html/cell-4-output-1.png" data-fig-pos="H" width="468" height="241" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Alternatively, using the <span class="math inline">\(p\)</span>-value approach we find <span class="math inline">\(P(Z\leq -2.31)=0.01044&lt;0.05\)</span> and therefore we reject the null hypothesis.</p>
-<div id="db7831c8" class="cell" data-message="false" data-execution_count="4">
+<div id="fa7cc88d" class="cell" data-message="false" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Ch-07_files/figure-html/cell-5-output-1.png" data-fig-pos="H" width="470" height="241" class="figure-img"></p>
+<p><img src="Ch-07_files/figure-html/cell-5-output-1.png" data-fig-pos="H" width="468" height="241" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -435,11 +435,17 @@ T=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}
 a+b+c+d=20 (4\times5).
 \]</span> Note that once we know 3 of the numbers above, then we can calculate the fourth and therefore only 3 of them are “free”. In this case we would have <span class="math inline">\(3=4-1=n-1\)</span> degrees of freedom.</p>
 <p>Note that as <span class="math inline">\(n\to\infty\)</span>, the <span class="math inline">\(t\)</span> distribution tends to the normal distribution. The <span class="math inline">\(t\)</span> distribution has heavier tails than the normal distribution meaning that it is more likely to have values that fall further away from the mean.</p>
-<div id="da31fec1" class="cell" data-execution_count="5">
+<div id="42474ab5" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-stderr">
+<pre><code>&lt;&gt;:11: SyntaxWarning: invalid escape sequence '\s'
+&lt;&gt;:11: SyntaxWarning: invalid escape sequence '\s'
+C:\Users\D.L.FINKELSHTEIN\AppData\Local\Temp\ipykernel_33156\3159062684.py:11: SyntaxWarning: invalid escape sequence '\s'
+  plt.plot(x, t.pdf(x, df = j), color = colors[i], label = f'$y = f_X(x), X\sim t_{{{j}}}$')</code></pre>
+</div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Ch-07_files/figure-html/cell-6-output-1.png" width="774" height="494" class="figure-img"></p>
+<p><img src="Ch-07_files/figure-html/cell-6-output-2.png" width="774" height="494" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -484,15 +490,154 @@ t=\frac{\bar{D}-\mu_0}{\frac{s_D}{\sqrt{n}}}
 \]</span> where <span class="math inline">\(s_D\)</span> is the sample standard deviation of <span class="math inline">\(D\)</span> and <span class="math inline">\(t\)</span> has a <span class="math inline">\(t\)</span> distribution with <span class="math inline">\(n-1\)</span> degrees of freedom.</p>
 <div id="exm-label2341" class="theorem example">
 <p><span class="theorem-title"><strong>Example 7.10</strong></span> Ten joints of meat are cut in half; one half is frozen and wrapped by process A and the other is frozen and wrapped by a new process B. The halves are placed in ten freezers with halves of the same joint being put in the same freezer. The number of days to spoilage are found to be:</p>
+<table class="table-bordered table-hover table-sm table-success small caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Joint number</th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(3\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(4\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(6\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(7\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(9\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Process A</td>
+<td style="text-align: center;"><span class="math inline">\(63\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(109\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(82\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(156\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(161\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(155\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(47\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(141\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(92\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(149\)</span></td>
+</tr>
+<tr class="even">
+<td>Process B</td>
+<td style="text-align: center;"><span class="math inline">\(129\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(105\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(76\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(207\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(253\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(146\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(62\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(160\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(90\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(177\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Assuming the differences between these number-pairs to be normally distributed, test:</p>
 <ul>
 <li><p><span class="math inline">\(H_0:\mu_D=\mu_B-\mu_A=0\)</span></p></li>
 <li><p><span class="math inline">\(H_0:\mu_D=\mu_B-\mu_A\neq0\)</span> (two-tailed)</p></li>
 <li><p><span class="math inline">\(\alpha=0.05\)</span></p></li>
 </ul>
-The sample mean and variances of the two processes are given by: <span class="math display">\[
+<p>The sample mean and variances of the two processes are given by: <span class="math display">\[
 \bar{x}_A=115.5, \ \ \bar{x}_B=140.5, \ \ s^2_A=1800.94, \ \ s^2_B=3676.28.
-\]</span> We first need to calculate the difference of the days to spoilage <span class="math inline">\(D\)</span>
+\]</span> We first need to calculate the difference of the days to spoilage <span class="math inline">\(D\)</span></p>
+<table class="table-bordered table-hover table-sm table-success small caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pair number</th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(3\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(4\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(6\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(7\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(9\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10\)</span></th>
+<th style="text-align: center;">Total</th>
+<th style="text-align: center;">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(D\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(66\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-4\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(51\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(92\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-9\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(15\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(19\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(28\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(250\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(25\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\({D-\overline{D}}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(41\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-29\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-31\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(26\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(67\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-34\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-10\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-6\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-27\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(3\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\((D-\overline{D})^2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1681\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(841\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(961\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(676\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(4489\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1156\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(100\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(36\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(729\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(9\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(10678\)</span></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
 <p>Then <span class="math display">\[
 s_D^2=\frac{1}{9}\sum_{\text{all pairs}}(D-\overline{D})^2=\frac{10678}{9}=1186.44.
 \]</span> The test statistic is then given by <span class="math display">\[
@@ -510,6 +655,27 @@ t=\frac{(\bar{x}_1-\bar{x}_2)-(\mu_1-\mu_2)}{s\sqrt{\left(\frac1{n_1}+\frac1{n_2
 \]</span> with <span class="math inline">\(n_1+n_2-2\)</span> degrees of freedom. (This comes from <span class="math inline">\((n_1-1)+(n_2-1)=n_1+n_2-2\)</span>.)</p>
 <div id="exm-label32152" class="theorem example">
 <p><span class="theorem-title"><strong>Example 7.11</strong></span> A trial takes place in which eight people are given only water, whereas another group of eight people are given a new energy drink. They then have to take part in an endurance task. The results of the trial are given in the following table.</p>
+<table class="table-bordered table-hover table-sm table-success small caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Mean</th>
+<th style="text-align: center;">Standard deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Water (<span class="math inline">\(x_1\)</span>)</td>
+<td style="text-align: center;"><span class="math inline">\(12.2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(2.4\)</span></td>
+</tr>
+<tr class="even">
+<td>Energy drink (<span class="math inline">\(x_2\)</span>)</td>
+<td style="text-align: center;"><span class="math inline">\(13.1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(3.1\)</span></td>
+</tr>
+</tbody>
+</table>
 <p>Note that these samples are independent; water and energy drinks are given to two different groups of people. Assuming the relevant assumptions hold, use an unpaired t-test to decide whether people who have taken the energy drink perform better at the 5% significance level, i.e.</p>
 <ul>
 <li><p><span class="math inline">\(H_0:\mu_1-\mu_2=0\)</span></p></li>
